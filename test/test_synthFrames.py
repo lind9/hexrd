@@ -155,7 +155,7 @@ def makeRandGrains(numGrains, omegaMM, detectorGeom):
     spotsDummy = Spots(planeData, None, detectorGeom, omegaMM)
 
     if numGrains == 1:
-        import orientations as ors
+        #import orientations as ors
         r = ors.RotInv(3.08805198-num.pi, 0., 1., 0.).toMatrix()
         # r = num.eye(3)
         rMats = num.atleast_3d(r).T
